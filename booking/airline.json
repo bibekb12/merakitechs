@@ -1,0 +1,63 @@
+[
+    {
+      "model": "booking.airlines",
+      "pk": 1,
+      "fields": {
+        "airline_name": "Yeti Airlines",
+        "airline_model": "ATR 72",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Pokhara (PKR)"
+      }
+    },
+    {
+      "model": "booking.airlines",
+      "pk": 2,
+      "fields": {
+        "airline_name": "Shree Airlines",
+        "airline_model": "Bombardier Dash 8",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Lukla (LUA)"
+      }
+    },
+    {
+      "model": "booking.airlines",
+      "pk": 3,
+      "fields": {
+        "airline_name": "Saurya Airlines",
+        "airline_model": "ATR 72",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Bhairahawa (BWA)"
+      }
+    },
+    {
+      "model": "booking.airlines",
+      "pk": 4,
+      "fields": {
+        "airline_name": "Buddha Air",
+        "airline_model": "ATR 42",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Janakpur (JKR)"
+      }
+    },
+    {
+      "model": "booking.airlines",
+      "pk": 5,
+      "fields": {
+        "airline_name": "Simrik Airlines",
+        "airline_model": "Sukhoi Superjet 100",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Biratnagar (BIR)"
+      }
+    },
+    {
+      "model": "booking.airlines",
+      "pk": 6,
+      "fields": {
+        "airline_name": "Sita Air",
+        "airline_model": "Cessna Caravan",
+        "flight_origin": "Kathmandu (KTM)",
+        "flight_destination": "Pokhara (PKR)"
+      }
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+<html>
+    <title>booking</title>
+    <head>Hi guest, Welcome here for flight booking !</head>
+    <body>
+       <p> welcome to the fight booking</p>
+       <p>Select an airline that you prefer</p>
+        <ol>
+            {% for x in myairline %}
+            <li><a href="{% url 'airlinedetail' x.id %}">{{ x.airline_name }} | {{ x.airline_model }}</a></li>
+            {% comment %} <li><a href="flightdetail/">{{ x.airline_model }} </a></li> {% endcomment %}
+            {% comment %} <li> {{ x }} </li> {% endcomment %}
+            {% empty %}
+            <li><b> No airlines available.</b></li><br>
+            {% endfor %}
+        </ol>
+    </body>
+    <body>
+        <h2>My Booked Orders</h2>
+        <ul>
+            {% for order in myorders %}
+            <li>{{ order.flight_name }} - {{ order.flight_date }}</li>
+            {% empty %}
+            <li><b>No booked orders available.</b></li>
+            {% endfor %}
+        </ul>
+        {% include "footer.html" %}
+    </body>
+</html>

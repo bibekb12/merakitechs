@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <h1>Flight Schedule</h1>
+        <hr>
+        <h2>Flight Schedule for {{ myairline.airline_name }}</h2>
+       
+    </head>
+    <body>
+        <form method="POST" action="confirm_schedule" value="pk">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Airline Name</th>
+                    <th>Flight Origin</th>
+                    <th>Flight Destination</th>
+                    <th>Schedule Date</th>
+                    <th>Confirm Schedule</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{myairline.airline_name}}</td>
+                    <td>{{ myairline.flight_origin }}</td>
+                    <td>{{ myairline.flight_destination }}</td>
+                    <td>
+    <input type="date" id="schedule_date" name="schedule_date" value="{{ myairline.schedule_date }}">
+    <input type="time" id="schedule_time" name="schedule_time" value="{{ myairline.schedule_time }}">
+                    </td>
+                    <td>
+                    <input type="submit" name="confirm_schedule" value="Confirm">
+                    <input type="submit" name="cancel_schedule" value="Reset">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+        {% include "footer.html" %}
+    </body> 
+</html>
